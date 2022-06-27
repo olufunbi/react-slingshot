@@ -35,8 +35,8 @@ workflows:
     jobs:
       - build
       - test:
-        requires:
-          - build
+          requires:
+            - build
       - audit:
-        requires:
-          - test
+          requires:
+            - test
